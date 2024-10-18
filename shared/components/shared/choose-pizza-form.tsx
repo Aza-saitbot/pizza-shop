@@ -7,7 +7,7 @@ import { PizzaImage } from './pizza-image';
 import { Title } from './title';
 import { Button } from '../ui';
 import { GroupVariants } from './group-variants';
-import { PizzaSize, PizzaType, pizzaTypes } from '@/../../../../../pizza/pizza-shop/constants/pizza';
+import { PizzaSize, PizzaType, pizzaTypes } from '@/shared/constants/pizza';
 import { IngredientItem } from './ingredient-item';
 import { cn } from '@/shared/lib/utils';
 import { getPizzaDetails } from '@/shared/lib';

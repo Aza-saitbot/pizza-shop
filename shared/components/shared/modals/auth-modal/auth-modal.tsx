@@ -1,7 +1,7 @@
 'use client';
 
-import { Button } from '../../../../../../../archakov/next-pizza/shared/components';
-import { Dialog, DialogContent } from '../../../../../../../archakov/next-pizza/shared/components/ui/dialog';
+import { Button } from '@/shared/components';
+import { Dialog, DialogContent } from '@/shared/components/ui/dialog';
 import { signIn } from 'next-auth/react';
 import React from 'react';
 import { LoginForm } from './forms/login-form';

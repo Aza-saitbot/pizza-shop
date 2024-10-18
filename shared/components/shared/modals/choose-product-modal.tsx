@@ -1,13 +1,13 @@
 'use client';
 
-import { Dialog, DialogContent } from '../../../../../../archakov/next-pizza/shared/components/ui/dialog';
-import { cn } from '../../../../../../archakov/next-pizza/shared/lib/utils';
+import { Dialog, DialogContent } from '@/shared/components/ui/dialog';
+import { cn } from '@/shared/lib/utils';
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { ProductWithRelations } from '../../../../../../archakov/next-pizza/@types/prisma';
-import { useCartStore } from '../../../../../../archakov/next-pizza/shared/store';
+import { ProductWithRelations } from '@/@types/prisma';
+import { useCartStore } from '@/shared/store';
 import toast from 'react-hot-toast';
-import { ProductForm } from '../../../../../../archakov/next-pizza/shared/components/shared/product-form';
+import { ProductForm } from '../product-form';
 
 interface Props {
   product: ProductWithRelations;

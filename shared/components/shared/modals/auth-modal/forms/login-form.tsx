@@ -2,9 +2,9 @@ import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { TFormLoginValues, formLoginSchema } from './schemas';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Title } from '../../../../../../../../archakov/next-pizza/shared/components/shared/title';
-import { FormInput } from '../../../../../../../../archakov/next-pizza/shared/components/shared/form';
-import { Button } from '../../../../../../../../archakov/next-pizza/shared/components/ui';
+import { Title } from '../../../title';
+import { FormInput } from '../../../form';
+import { Button } from '@/shared/components/ui';
 import toast from 'react-hot-toast';
 import { signIn } from 'next-auth/react';
 
@@ -53,7 +53,7 @@ export const LoginForm: React.FC<Props> = ({ onClose }) => {
             <Title text="Вход в аккаунт" size="md" className="font-bold" />
             <p className="text-gray-400">Введите свою почту, чтобы войти в свой аккаунт</p>
           </div>
-          <img src="/public/assets/images/phone-icon.png" alt="phone-icon" width={60} height={60} />
+          <img src="/assets/images/phone-icon.png" alt="phone-icon" width={60} height={60} />
         </div>
 
         <FormInput name="email" label="E-Mail" required />

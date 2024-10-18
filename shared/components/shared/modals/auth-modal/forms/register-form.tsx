@@ -4,10 +4,10 @@ import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import toast from 'react-hot-toast';
-import { registerUser } from '../../../../../../../../archakov/next-pizza/app/actions';
+import { registerUser } from '@/app/actions';
 import { TFormRegisterValues, formRegisterSchema } from './schemas';
-import { FormInput } from '../../../../../../../../archakov/next-pizza/shared/components/shared/form';
-import { Button } from '../../../../../../../../archakov/next-pizza/shared/components/ui';
+import { FormInput } from '../../../form';
+import { Button } from '@/shared/components/ui';
 
 interface Props {
   onClose?: VoidFunction;
